@@ -1,1 +1,7 @@
 .idea
+*.txt
+server/libraries
+server/logs
+server/versions
+server/world
+server/*.json

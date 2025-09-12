@@ -1,0 +1,11 @@
+---
+name: rl-minecraft-server
+
+services:
+  mc-service:
+    image: reiloe/minecraft:v1
+    ports:
+      - 8888:25565
+    volumes:
+      - ./server:/minecraft
+    restart: always
