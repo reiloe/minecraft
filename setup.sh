@@ -19,7 +19,7 @@ echo "You will find the EULA at https://www.minecraft.net/de-de/eula"
 
 if confirm "Do you agree to the EULA?"; then
   echo eula=true > server/eula.txt
-  docker build -t reiloe/minecraft:1.21.8 .
+  docker build -t rl-minecraft:1.21.8 .
   docker compose up
 else
     echo "Setup of Minecraft Server cancelled!!!"

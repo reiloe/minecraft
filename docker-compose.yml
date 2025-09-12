@@ -3,7 +3,7 @@ name: rl-minecraft-server
 
 services:
   mc-service:
-    image: reiloe/minecraft:1.21.8
+    image: rl-minecraft:1.21.8
     ports:
       - 8888:25565
     volumes:
