@@ -12,7 +12,7 @@ The goal of this project is to dockerize a Minecraft Server.
 
 - Git
 - Docker
-- Docker Compose
+- Docker Compose v2
 
 ### Quickstart
 
@@ -36,6 +36,12 @@ git clone https://github.com/reiloe/minecraft.git
 cd minecraft
 ```
 
+- copy and rename [example.server.config](example.server.properties) into server folder
+
+```bash
+cp example.server.properties ./server/server.properties
+```
+
 - run the following command:
 
 ```bash
@@ -43,7 +49,7 @@ cd minecraft
 ```
 
 > [!CAUTION]  
-> You have to accept the EULA to run the Minecraft server !!!
+> You have to accept the [EULA](https://www.minecraft.net/de-de/eula) to run the Minecraft server !
 
 ### Usage
 
@@ -56,11 +62,13 @@ Changes to the server.properties file can be used to customize the Minecraft ser
 Before changing the settings, you should shut down the Minecraft server.
 
 ```bash
-docker-compose stop
+docker compose stop
 ```
 
 After you have customized the file, start the server with the new settings.
 
 ```bash
-docker-compose start
+docker compose start
 ```
+
+For other settings like Whitelist visit the [Minecraft-Wiki](https://minecraft.wiki/w/Tutorial:Setting_up_a_Java_Edition_server)

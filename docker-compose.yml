@@ -3,9 +3,16 @@ name: rl-minecraft-server
 
 services:
   mc-service:
-    image: reiloe/minecraft:v1
+    image: reiloe/minecraft:1.21.8
     ports:
       - 8888:25565
     volumes:
-      - ./server:/minecraft
+      - ./server/server.properties:/minecraft/server.properties
+      - ./server/start.sh:/minecraft/start.sh
+      - ./server/server.jar:/minecraft/server.jar
+      - ./server/eula.txt:/minecraft/eula.txt
+      - mcraft:/minecraft
     restart: always
+volumes:
+  mcraft:
+    driver: local
