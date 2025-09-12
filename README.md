@@ -56,11 +56,11 @@ Changes to the server.properties file can be used to customize the Minecraft ser
 Before changing the settings, you should shut down the Minecraft server.
 
 ```bash
-docker compose stop
+docker-compose stop
 ```
 
 After you have customized the file, start the server with the new settings.
 
 ```bash
-docker compose start
+docker-compose start
 ```
