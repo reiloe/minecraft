@@ -36,20 +36,27 @@ git clone https://github.com/reiloe/minecraft.git
 cd minecraft
 ```
 
-- copy and rename [example.server.config](example.server.properties) into server folder
+- copy and rename [example.server.properties](example.server.properties) into server folder
 
 ```bash
 cp example.server.properties ./server/server.properties
 ```
 
+> [!CAUTION]  
+> You have to accept the [EULA](https://www.minecraft.net/de-de/eula) to run the Minecraft server !
+> To do so you have to provide a file eula.txt with eula=true inside
+
+- copy and rename [example.eula.txt](example.eula.txt) into server folder
+
+```bash
+cp example.eula.txt ./server/eula.txt
+```
+
 - run the following command:
 
 ```bash
-./setup.sh
+docker compose up
 ```
-
-> [!CAUTION]  
-> You have to accept the [EULA](https://www.minecraft.net/de-de/eula) to run the Minecraft server !
 
 ### Usage
 
