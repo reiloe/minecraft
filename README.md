@@ -36,10 +36,10 @@ git clone https://github.com/reiloe/minecraft.git
 cd minecraft
 ```
 
-- Create a folder named .server
+- Create a folder named server
 
 ```bash
-mkdir .server
+mkdir server
 ```
 
 - copy and rename [example.server.properties](example.server.properties) into server folder
