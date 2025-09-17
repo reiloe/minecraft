@@ -77,7 +77,7 @@ You can ckeck by connecting to the server via your minecraft launcher with the I
 > python3 -m mcstatus hereComesTheAddressOfYourMinecraftServer status
 > ```
 > eg: python3 -m mcstatus 1.2.3.4:8888 status
-> ![mcstatus](img/mcstatus.png))
+> ![mcstatus](img/mcstatus.png)
 
 [^1]: To use this tool you need Python installed on your maschine
 
