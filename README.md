@@ -66,9 +66,20 @@ docker compose up
 
 ### Usage
 
-After the [Quickstart](#Quickstart) the Minecraft server is up and running with default settings.  
+After the [Quickstart](#Quickstart) the Minecraft server is up and running with default settings.
 
-You can now test the server by connecting to the server via your minecraft launcher with the IP of your server.
+You can ckeck by connecting to the server via your minecraft launcher with the IP of your server.
+
+> [!TIP]  
+> Use a tool (eg. [mcstatus](https://github.com/py-mine/mcstatus) to test that your server is up and running.  
+> After the installation of the mcstatus tool run[^1] 
+> ```bash 
+> python3 -m mcstatus hereComesTheAddressOfYourMinecraftServer status
+> ```
+> eg: python3 -m mcstatus 1.2.3.4:8888 status
+> ![mcstatus](img/mcstatus.png))
+
+[^1]: To use this tool you need Python installed on your maschine
 
 Changes to the server.properties file can be used to customize the Minecraft server ([Read more](https://minecraft.wiki/w/Server.properties))
 
