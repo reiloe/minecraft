@@ -1,0 +1,16 @@
+---
+name: rl-minecraft-server
+
+services:
+  mc-service:
+    build: .
+    ports:
+      - 8888:25565
+    volumes:
+      - ./server/server.properties:/minecraft/server.properties
+      - ./server/eula.txt:/minecraft/eula.txt
+      - mcraft:/minecraft
+    restart: always
+volumes:
+  mcraft:
+    driver: local
